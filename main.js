@@ -49,17 +49,17 @@ window.onload = function() {
 
     //load images
     playerRightImg = new Image();
-    playerRightImg.src = "./assets/miniboyright.png";
+    playerRightImg.src = "./miniboyright.png";
     player.img = playerRightImg;
     playerRightImg.onload = function() {
         context.drawImage(player.img, player.x, player.y, player.width, player.height);
     }
 
     playerLeftImg = new Image();
-    playerLeftImg.src = "./assets/miniboyleft.png";
+    playerLeftImg.src = "./miniboyleft.png";
 
     platformImg = new Image();
-    platformImg.src = "./assets/platform.png";
+    platformImg.src = "./platform.png";
 
     velocityY = initialVelocityY;
     placePlatforms();
